@@ -1,0 +1,250 @@
+/* ── Base ── */
+
+.app {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+/* ── Header ── */
+
+.header {
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #666;
+}
+
+/* ── Controls ── */
+
+.controls {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fafafa;
+}
+
+.historical-metrics {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fdfdfd;
+}
+
+.historical-metrics h2 {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.loading-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.controls h2 {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.slider-group {
+  margin-bottom: 16px;
+}
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 0.88rem;
+}
+
+.slider-value {
+  font-weight: 600;
+  font-size: 0.88rem;
+  min-width: 48px;
+  text-align: right;
+}
+
+.slider-group input[type="range"] {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #444;
+  cursor: pointer;
+}
+
+.slider-group input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #444;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 4px;
+  padding: 9px 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background: #333;
+  color: #fff;
+}
+
+button:hover {
+  background: #444;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 0.88rem;
+  margin-bottom: 16px;
+}
+
+/* ── Chart ── */
+
+.chart-section {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.chart-section h2 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.chart-note {
+  margin: 0 0 16px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ── Insights ── */
+
+.insights {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.insights h2 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.metrics-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric-card {
+  flex: 1;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 14px 12px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-title {
+  font-size: 0.78rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.metric-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.metric-value.positive {
+  color: #1a7f37;
+}
+
+.metric-value.negative {
+  color: #c0392b;
+}
+
+.drivers {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 14px;
+}
+
+.drivers h3 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.drivers ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.drivers li {
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .metrics-row {
+    flex-direction: column;
+  }
+
+  .app {
+    padding: 20px 14px 32px;
+  }
+}
